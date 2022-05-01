@@ -63,6 +63,7 @@ section{
     top: 5rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #text{
     padding: 1rem;
@@ -289,6 +290,7 @@ address>p>a{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: center;
     }
     .text-1{
         width: 50%;
