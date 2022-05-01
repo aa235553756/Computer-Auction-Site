@@ -1,0 +1,365 @@
+body{
+    margin: 0 0 0 0;
+}
+*{
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+}
+#container::after{
+    content: "";
+    background: url(./image/bord.jpg);
+    opacity: 0.1;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+/* header */
+header{
+    margin:  0 1rem 0rem 1rem;
+    background:linear-gradient(0deg,rgb(185, 192, 255,0.9),rgb(59, 79, 255) );
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    position: fixed;
+    height: 3rem;
+    z-index: 10000;
+    box-shadow: 0px 5px 10px #888888;
+}
+header>img{
+    display: block;
+    padding:0.25rem 0 0.15rem 5rem ;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+}
+.nav-link{
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 0 0.25rem;
+    padding: 0.85rem;
+    text-decoration:none;
+}
+.nav-link:hover{
+    background-color: rgb(0, 195, 255);
+}
+.nav-link > a{
+    display: block;
+    color: inherit;
+}
+
+
+/* section */
+section{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#text{
+    padding: 1rem;
+    text-align:center;
+    width: 25%;
+}
+#text>h2{
+    margin: 2rem 0rem 0;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    color: white; 
+    background-color: #a4b9de;
+    font-size: 1.2rem;
+    box-shadow: -1.5px -1.5px 1px #000, 1.5px -1.5px 1px rgb(0 0 0);
+    background-color: #888888;
+}
+#text>p{
+    padding: 0.8rem 0 0;
+    font-size: 0.8rem;
+}
+
+h3{
+    margin: 2rem 2rem 0;
+    border: 1px solid;
+    box-shadow: 0px 5px 5px #888888;
+}
+
+.text-1>p{
+    font-size: 0.8rem;
+}
+
+h2{
+    color:lightslategray   
+}
+/* form */
+form{
+    width: 20%;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+#email{
+    width: 80%;
+    
+}
+#submit{
+    width: 50%;
+    margin: 0.5rem  0 1rem 0;
+}
+
+
+/* 實體影片 */ 
+.video{
+    width: 50%;
+    height: 60vh;
+    padding: 3rem 0rem;
+    background-color: #000;
+}
+.video::after{
+    content: "";
+    background-color: #000;
+}
+iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* 商品 */
+#product{
+    background:linear-gradient(220deg,rgb(185, 192, 255,0.1),rgb(59, 79, 255,0.5));
+    width: 100%;
+    height: auto;
+    margin: 6rem  0 0 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-y:hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 5px #888888;
+}
+
+ul,ol {
+    margin:0;
+    padding: 0.5rem 0 0 0;
+    list-style:none
+    }
+ul{
+    display: flex;
+}
+li{
+    padding: 0 0.2rem;
+}
+li>img{
+    height: 7.5rem;
+    border-radius: 5px;
+}
+/* 滾動條 */
+#product::-webkit-scrollbar {
+    height: 0px;
+    background: rgb(255, 255, 255);
+  }
+#product::-webkit-scrollbar-thumb {
+    width: 20px;
+    border-radius: 10px;
+    background: #deeaff;
+}
+
+#info>img{
+    padding: 10px;
+    height: 100%;
+}
+/* info */
+#info{
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin: 3rem auto;
+    display: flex;
+    border-style: outset;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #888888;
+    align-items: center;
+}
+
+#info>img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-sizing: border-box;
+    width: 40%;
+    height: auto;
+}
+#descib{
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+}
+button{
+    color: rgb(255, 0, 0,0.5);
+    align-self: flex-end;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: unset;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 1px #888888;
+}
+button:hover{
+    color: white;
+    background: linear-gradient(180deg,rgb(185, 192, 255),rgb(59, 79, 255));       
+}
+.float{
+    float: left;
+}
+#footer{
+    width: 100%;
+    background: linear-gradient(180deg,rgb(185, 192, 255),rgb(59, 79, 255));
+    margin: 1rem 0 0 0;
+}
+address{
+    display: flex;
+    justify-content: end;
+    font-size: 0.9rem;
+    padding: 1rem 5rem;
+    text-align: right;
+}
+address>p{
+    background: rgb(185, 192, 255,0.1);
+    color:rgb(0, 0, 0,0.7);
+    font-style: normal;
+}
+address>p>a{
+    margin: 0 1.5rem 0 0;
+    color: rgb(0, 40, 255);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 媒體查詢 */
+@media (max-width:768px ) {
+    header{
+        width: 100%;
+        margin: 0;
+    }
+    header>img{
+        padding:0.25rem 0 0.15rem 0rem ;
+    }
+    nav{
+        align-items: center;
+    }
+    .nav-link{
+        margin: 0;
+    }
+    
+    section{
+        top: 4.5rem;
+        display: flex;
+        height: auto;
+    }
+    section .shop{
+        width: 100%;
+        padding: 0.5rem 0 0.5rem ;
+        box-shadow:-1.5px -1.5px 1px #000, 1.5px -1.5px 1px rgb(0, 0, 0);
+    }
+    #text{
+        padding: 2rem 0 1rem 0;
+    }
+    #text>h2{
+        margin: 0 1.5rem 0 1.5rem;        
+        width: 100%;
+        padding: 0.5rem 0 0.5rem ;
+        box-shadow:-1.5px -1.5px 1px #000, 1.5px -1.5px 1px rgb(0, 0, 0);
+        background-color: #888888;
+    }
+    section #text{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .text-1{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .video{
+        padding:1rem 0;
+        width: 100%;
+        height: 40vh;
+    }
+
+    #product{
+        height: auto;
+    }
+    #info{
+        border: inset;
+        height: auto;
+        display: block;
+        width: 95%;
+        margin: 2rem auto;
+    }
+    #info>img{
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 0;
+        width: 100%;
+        height: 45vh;
+    }
+    #descib{
+        width: 100%;
+        padding: 0;
+    }
+    #descib>h2{
+        margin: 0 0 0.2rem 0.5rem;
+        font-size: 1rem;
+    }
+    #descib>p{
+        margin: 0 0.5rem 0.5rem; 
+        font-size: 0.5rem;
+    }
+    #descib>button{
+        border-style: unset;
+        margin: 0;
+        width: 100%;
+        color: rgba(255, 0, 0, 0.6);
+    }
+    #descib>button:hover{
+        color: white;
+        background: linear-gradient(180deg,rgb(185, 192, 255),rgb(59, 79, 255));        
+    }
+    address{
+        display: flex;
+        justify-content: end;
+        margin: 0;
+        padding: 1rem 0.5rem 0 0;
+    }
+    address>p{
+        font-size: 0.2rem;
+        color: rgb(31, 31, 31);
+    }
+    address>p>a {
+        color: rgb(70, 70, 70);
+    }
+    #footer{
+        height: 3rem;
+    }
+}
+
+@media (max-height:415px ) {
+    .video{
+        height: auto;
+    }
+}
